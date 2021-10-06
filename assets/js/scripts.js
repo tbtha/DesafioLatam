@@ -33,10 +33,13 @@ console.log(`
 `)
 
 //Ejercicio 4
-let dias = parseInt(prompt("Ingrese una cantidad de dias: "));
-
+let cantidadDias = parseInt(prompt("Ingrese una cantidad de dias: "));
+let anio = Math.floor( cantidadDias / 365);
+let semanas = Math.floor((cantidadDias % 365) / 7);
+let dias = Math.floor((cantidadDias % 365) % 7);
 console.log(`
-    Los dias ingresados son equivalentes a: ${dias / 365}años, semanas, dias.
+    Los dias ingresados son equivalentes a: ${anio}años, ${semanas} semanas, ${dias}dias.
+
 `)
 
 
